@@ -14,7 +14,7 @@ public class Cliente {
 	private Long id;
 	private String nome;
 	@ManyToOne
-	private String endereço;
+	private Endereco endereco;
 
 	public Long getId() {
 		return id;
@@ -32,11 +32,11 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getEndereço() {
-		return endereço;
+	public Endereco getEndereço() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereço(Endereco endereco) {
+		this.endereco = endereco;
 	}
 }
